@@ -1,0 +1,32 @@
+<head>
+	<title>Python Starter Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<link rel="stylesheet" href="stylesheets/style.css" />-->
+</head>
+<body>
+	<table>
+		
+		<form action="{{url_for('upload')}}" enctype="multipart/form-data" method="post"> 
+		<h1 id = "message">Click Submit to Upload</h1>
+		<input type='file' name='myfile'/>
+		<input type="text" name="comments"/>
+		<button name="submit "value= "Submit">Submit</button>
+		
+		</form> 
+
+	</table>
+	
+	<form action="{{url_for('logout')}}">
+	<button name="logout "value= "logout">Logout</button>
+	</form>
+	
+	<form action="{{url_for('show')}}">
+	<button name="logout "value= "logout">Show all images</button>
+	</form>
+	
+	<form action="{{url_for('display')}}">
+	<button name="display "value= "display">Display</button>
+	</form>
+
+</body>
+</html>

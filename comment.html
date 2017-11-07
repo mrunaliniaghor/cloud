@@ -1,0 +1,12 @@
+{% if result != None %}
+<form action="{{url_for('comments')}}" method="post">
+<img width=200px;height=200px; src="data:image/png;base64,{{ result }}"/><br>
+{%for jj in comm %}
+<li>{{jj}}</li>
+{% endfor %}
+<input type="hidden" name="filename1" value={{file}}></input>
+<input type="text" name="comment1"/>
+<button name="comment" value="Comment">Comment</button>
+</form>
+
+{% endif %}

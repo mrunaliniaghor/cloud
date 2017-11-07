@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+
+<table>
+{%for x in name1 %}
+<tr><td><a href="{{ url_for('delete', folder_name=x) }}">{{x}}</a></td>
+<td><a href="{{ url_for('del1', fol=x) }}"><button name="delete" value="delete">Delete</button></a><br></td></tr>
+{% endfor %}
+<table>
+</form>
+</body>
+</html>
